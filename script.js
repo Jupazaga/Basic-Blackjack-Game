@@ -22,12 +22,14 @@ function NewCard() {
   RenderGame();
 }
 function GetRandomCard() {
-  card = Math.floor(Math.random() * 11);
+  card = Math.floor(Math.random() * 11) + 1;
   if (card == 0){
     console.log(card);
     return GetRandomCard();
-  } else{
+  } if (card == 1){
     console.log(card);
+    return card = 11;
+  } else { 
     return card;
   }
 
