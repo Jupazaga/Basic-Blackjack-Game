@@ -1,3 +1,10 @@
+let card = 0, hasBlackJack = false, isAlive = true, message = "", sum = 0; 
+let player = {
+  name: "Per",
+  chips: 145, 
+}
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
 function RenderGame() {
   if (isAlive == true){
     sum += GetRandomCard();
@@ -34,5 +41,4 @@ function GetRandomCard() {
   }
 
 }
-let card = 0, hasBlackJack = false, isAlive = true, 
-message = "", sum = 0;
+
